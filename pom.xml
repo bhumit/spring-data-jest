@@ -51,11 +51,10 @@
 
 		<!-- Dependencies version -->
 		<springboot>1.4.0.RELEASE</springboot>
-		<spring>4.3.2.RELEASE</spring>
-		<springdataes>2.0.2.RELEASE</springdataes>
+		<spring>4.3.5.RELEASE</spring>
+		<springdataes>2.1.0.RC1</springdataes>
 		<jest>2.0.3</jest>
 		<gson>2.4</gson>
-		<jackson>2.7.5</jackson>
 		<awssigning>0.0.14</awssigning>
 		<springcloudaws>1.1.1.RELEASE</springcloudaws>
 		<jna>4.2.2</jna>
@@ -75,6 +74,17 @@
 		<source.encoding>UTF-8</source.encoding>
 
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/libs-milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<dependencyManagement>
 		<dependencies>
